@@ -4,9 +4,71 @@ body{
 }
 
 #container{
-	width: 92%;
-	margin: 0 auto;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#topHeader{
+	background-color: blue;
+	color: #FFFFFF;
+	height: 95.0pt;
+	overflow:hidden;
+}
+.nav {
+	background-color: #ffa500;
+	color: #FFF;
+	margin:0;
+	list-style: none;
+	text-align: center;
+	padding-top: 5px;
+}
+.nav > li {
+	display: inline-block;
+}
+.nav > li > a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+	padding: 10px;
+}
+#logo{
+	float:left;
+	width:15%;
 	overflow: hidden;
+}
+#leftColumn{
+	width: 50%;
+	float: left;
+	padding-top: 120px;
+	color: black;
+}
+#rightColumn{
+	width: 50%;
+	float: right;
+	padding-top: 120px;
+	color: green;
+}
+a:hover{
+	color: #997533;
+	background: #FFF;
+}
+a:link {
+	color: #A0522D;
+	text-decoration: underline;
+}
+a:visited {
+	color:#008000;
+	text-decoration: underline;
+}
+p.h1 { 
+	font: monospace;
+	font-size: 12pt;
+	font-family: Lucida Sans Typewriter;
+}
+p.h2 { 
+	font: helvetica;
+	font-size: 16pt;
+	font-family: lucida;
 }
 #footer{
 	height: 40pt;
@@ -16,22 +78,11 @@ body{
 	clear: both;
 	padding-top: 10pt;
 }
-#topHeader{
-	background-color: blue;
-	color: #FFFFFF;
-	height: 95.0pt;
-	overflow:hidden;
+
+@media screen and (max-width: 925px){
+
 }
-#logo{
-	float:left;
-	width:15%;
-	overflow: hidden;
-}
-#leftColumn{
-	width: 50%;
-	color: orange;
-}
-#rightColumn{
-	width: 50%;
-	color: green;
+
+@media screen and (max-width: 490px){ /* for screens less than 500px mobile friendy menu changes and columns */
+
 }
